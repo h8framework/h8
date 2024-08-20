@@ -34,24 +34,24 @@ lint = [
 
 dev = [
     "pre-commit",
-    "src[test]",
-    "src[lint]",
+    "h8[test]",
+    "h8[lint]",
 ]
 
 ci = [
   "pre-commit",
-  "src[test]",
-  "src[lint]"
+  "h8[test]",
+  "h8[lint]"
 ]
 
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["src"]
+include = ["h8"]
 # namespaces = true
 
 [tool.setuptools.dynamic]
-version = {attr = "src.__version__"}
+version = {attr = "h8.__version__"}
 
 [tool.pyright]
 typeCheckingMode = "standard"
